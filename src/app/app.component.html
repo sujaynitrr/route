@@ -12,4 +12,27 @@
     </li>
   </ul>
 </nav>
-<router-outlet></router-outlet>
+
+<div>
+  <h2>Angular Router Sample</h2>
+  <nav>
+    <a
+      class="button"
+      routerLink="/crisis-list"
+      routerLinkActive="activebutton"
+      ariaCurrentWhenActive="page"
+      >Crisis Center</a
+    >
+    |
+    <a
+      class="button"
+      routerLink="/heroes-list"
+      routerLinkActive="activebutton"
+      ariaCurrentWhenActive="page"
+      >Heroes</a
+    >
+  </nav>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
